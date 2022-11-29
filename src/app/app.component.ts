@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { FactsService } from './services/facts.service';
 
 @Component({
   selector: 'app-root',
