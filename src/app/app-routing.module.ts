@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AuthComponent } from './auth/auth.component';
 import { CalendarComponent } from './calendar/calendar.component';
+import { PageNotFoundComponent } from './shared/page-not-found/page-not-found.component';
 
 const routes: Routes = [
   {
@@ -17,10 +18,10 @@ const routes: Routes = [
     path: 'auth',
     component: AuthComponent,
   },
-  // {
-  //   path: '**',
-  //   component: PageNotFoundComponent,
-  // },
+  {
+    path: '**',
+    component: PageNotFoundComponent,
+  },
 ];
 
 @NgModule({
