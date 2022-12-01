@@ -1,4 +1,14 @@
-.bg-img {
+
+body  {
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRww5D3QYSDp9ZvsL5o3ojF9lN_OqzcCwDYig&usqp=CAU);
+    background-repeat: no-repeat;
+    margin: 0px;
+    background-size: cover;
+    position: relative;
+    min-height: 100vh;
+    width: 100vw;
+}
+/* .bg-img {
   background-image: url('https://media.istockphoto.com/id/1429040171/photo/christmas-abstract-bokeh-background-with-snow-flakes.jpg?b=1&s=170667a&w=0&k=20&c=l8zg_XikF8yoLysu250PYoBV2ZxIGDC1H3YLBQbbDwA=');
   height: 100vh;
   width: 100vw;
@@ -6,28 +16,90 @@
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-}
+} */
 
-.grid-container {
+.grid-container  {
   display: grid;
-  grid-template-columns: auto auto auto auto auto;
+  grid-template-columns: repeat(5, 1fr);
+  /* //I changed this from the word auto five times cause I needed to tell it exactly what to do, not let it decide automatically */
   padding-left: 100px;
   padding-right: 100px;
   padding-top: 5%;
+  gap: 1.5rem;
 }
 
 .grid-item {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: auto;
+  width: 100%;
+  height: 100%;
   font-family: 'Fantasy';
-  font-size: 50px;
+  /* font-size: 50px; */
+  font-size: 3rem;
   text-align: center;
   border: 3px solid rgba(0,0,0,0.5);
   border-style: dashed;
   margin: 10px;
+  cursor: pointer;
+  position: relative;
+  right: 0px;
+  left: 0px;
+  top: 0px;
+  bottom: 0px;
+  z-index: 11;
 }
+
+.overlay  {
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 5%;
+    position: absolute;
+    /* top: auto;
+    bottom: auto; */
+    left: 0px;
+    right: 0px;
+    gap: 1.5rem;
+
+}
+
+.overlay-item {
+  /* display: flex; */
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  font-family: 'Fantasy';
+  /* font-size: 50px; */
+  text-align: center;
+  border: 3px solid rgba(0,0,0,0.5);
+  border-style: dashed;
+  margin: 10px;
+  cursor: pointer;
+
+  /* position: absolute;
+  z-index: 10; */
+}
+
+#overlay-item-1, #overlay-item-3, #overlay-item-5,#overlay-item-7,
+#overlay-item-9, #overlay-item-11,#overlay-item-13, #overlay-item-15,
+ #overlay-item-17,#overlay-item-19, #overlay-item-21, #overlay-item-23,
+#overlay-item-25
+{
+  background-color: rgb(219, 241, 72);
+  opacity: 0.79;
+  border-radius: 40% 10% / 20% 50%;
+}
+
+#overlay-item-2, #overlay-item-4, #overlay-item-6,#overlay-item-8,
+#overlay-item-10, #overlay-item-12, #overlay-item-14, #overlay-item-16,
+#overlay-item-18,#overlay-item-20, #overlay-item-22, #overlay-item-24
+{
+  background-color: rgb(238, 244, 238);
+  opacity: 0.79;
+  border-radius: 50% 20% / 10% 40%;}
 
 /* odd numbers */
 #grid-item-1, #grid-item-3, #grid-item-5,#grid-item-7,
@@ -36,7 +108,7 @@
 #grid-item-25
 {
   background-color: rgb(197, 21, 21);
-  opacity: 0.79;
+  /* opacity: 0.79; */
   border-radius: 40% 10% / 20% 50%;
 }
 
@@ -46,11 +118,18 @@
 #grid-item-18,#grid-item-20, #grid-item-22, #grid-item-24
 {
   background-color: green;
-  opacity: 0.79;
+  /* opacity: 0.79; */
   border-radius: 50% 20% / 10% 40%;}
 
-/* I'm leaving all these grid items below for now. They have been given individual ids in case
-we want to add style to these items individually. For example: individual sizes, or individual colors. */
+/* I'm leaving all these grid items below for now in case
+we want to add style these items individually. For example: individual sizes, or individual colors */
+
+.backOfCard {
+  transform: rotateY(270deg);
+  transition-duration: 3s;
+  background-color: blue;
+}
+
 #grid-item-1 {
 
 }
