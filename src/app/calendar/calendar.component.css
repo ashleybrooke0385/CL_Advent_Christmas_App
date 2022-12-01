@@ -1,14 +1,5 @@
 
-body  {
-    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRww5D3QYSDp9ZvsL5o3ojF9lN_OqzcCwDYig&usqp=CAU);
-    background-repeat: no-repeat;
-    margin: 0px;
-    background-size: cover;
-    position: relative;
-    min-height: 100vh;
-    width: 100vw;
-}
-/* .bg-img {
+.bg-img {
   background-image: url('https://media.istockphoto.com/id/1429040171/photo/christmas-abstract-bokeh-background-with-snow-flakes.jpg?b=1&s=170667a&w=0&k=20&c=l8zg_XikF8yoLysu250PYoBV2ZxIGDC1H3YLBQbbDwA=');
   height: 100vh;
   width: 100vw;
@@ -16,7 +7,7 @@ body  {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-} */
+}
 
 .grid-container  {
   display: grid;
