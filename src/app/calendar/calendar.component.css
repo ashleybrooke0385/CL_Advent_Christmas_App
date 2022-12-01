@@ -1,3 +1,13 @@
+
+/* body  {
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRww5D3QYSDp9ZvsL5o3ojF9lN_OqzcCwDYig&usqp=CAU);
+    background-repeat: no-repeat;
+    margin: 0px;
+    background-size: cover;
+    position: relative;
+    min-height: 100vh;
+    width: 100vw;
+} */
 .bg-img {
   background-image: url('https://media.istockphoto.com/id/1429040171/photo/christmas-abstract-bokeh-background-with-snow-flakes.jpg?b=1&s=170667a&w=0&k=20&c=l8zg_XikF8yoLysu250PYoBV2ZxIGDC1H3YLBQbbDwA=');
   height: 100vh;
@@ -27,6 +37,7 @@
   border: 3px solid rgba(0,0,0,0.5);
   border-style: dashed;
   margin: 10px;
+  cursor: pointer;
 }
 
 /* odd numbers */
@@ -51,8 +62,20 @@
 
 /* I'm leaving all these grid items below for now in case
 we want to add style these items individually. For example: individual sizes, or individual colors */
+
+.backOfCard {
+  transform: rotateY(270deg);
+  transition-duration: 3s;
+  background-color: blue;
+}
+
 #grid-item-1 {
   /* border-radius: 0% 30% ; */
+  /* transform: rotateX(150deg);
+  transform: rotateY(150deg);
+  transform: rotateZ(90deg); */
+  /* transform: rotate3d(360deg);
+  transition-duration: 3s; */
 }
 
 #grid-item-2 {
@@ -72,6 +95,8 @@ we want to add style these items individually. For example: individual sizes, or
 }
 
 #grid-item-6 {
+  transform: rotateY(150deg);
+  animation-duration: 10s;
 
 }
 

@@ -6,10 +6,24 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./calendar.component.css']
 })
 export class CalendarComponent implements OnInit {
+  showBack=false;
 
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  onHover() {
+    this.showBack = !this.showBack;
+  }
+
+  // festiveRotation() {
+  //   // document.getElementById("grid-item-1").style.backgroundColor = "blue";
+  //   document.getElementById("grid-item-1").style.opacity = "100%"
+  // }
+
 }
+
+
+
+
