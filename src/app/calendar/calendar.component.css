@@ -1,3 +1,12 @@
+/* body  {
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRww5D3QYSDp9ZvsL5o3ojF9lN_OqzcCwDYig&usqp=CAU);
+    background-repeat: no-repeat;
+    margin: 0px;
+    background-size: cover;
+    position: relative;
+    min-height: 100vh;
+    width: 100vw;
+} */
 
 .grid-container {
   display: grid;
@@ -17,6 +26,7 @@
   text-align: center;
   border: 3px solid rgba(0,0,0,0.5);
   margin: 10px;
+  cursor: pointer;
 }
 
 #grid-item-1, #grid-item-3, #grid-item-5,#grid-item-7,
@@ -37,8 +47,20 @@
 
 /* I'm leaving all these grid items below for now in case
 we want to add style these items individually. For example: individual sizes, or individual colors */
+
+.backOfCard {
+  transform: rotateY(270deg);
+  transition-duration: 3s;
+  background-color: blue;
+}
+
 #grid-item-1 {
   /* border-radius: 0% 30% ; */
+  /* transform: rotateX(150deg);
+  transform: rotateY(150deg);
+  transform: rotateZ(90deg); */
+  /* transform: rotate3d(360deg);
+  transition-duration: 3s; */
 }
 
 #grid-item-2 {
@@ -58,6 +80,8 @@ we want to add style these items individually. For example: individual sizes, or
 }
 
 #grid-item-6 {
+  transform: rotateY(150deg);
+  animation-duration: 10s;
 
 }
 
