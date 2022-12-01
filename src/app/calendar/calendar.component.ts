@@ -17,6 +17,10 @@ export class CalendarComponent implements OnInit {
     this.showBack = !this.showBack;
   }
 
+  onHoverBack() {
+    this.showBack = !this.showBack;
+  }
+
   // festiveRotation() {
   //   // document.getElementById("grid-item-1").style.backgroundColor = "blue";
   //   document.getElementById("grid-item-1").style.opacity = "100%"
