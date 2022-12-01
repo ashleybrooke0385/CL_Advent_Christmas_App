@@ -11,6 +11,7 @@ import { SecretSantaComponent } from './secret-santa/secret-santa.component';
 import { CalendarCardComponent } from './calendar/calendar-card/calendar-card.component';
 import { CalendarModalComponent } from './calendar/calendar-modal/calendar-modal.component';
 import { AuthComponent } from './auth/auth.component';
+import { PageNotFoundComponent } from './shared/page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { AuthComponent } from './auth/auth.component';
     CalendarCardComponent,
     CalendarModalComponent,
     AuthComponent,
+    PageNotFoundComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule],
   providers: [],
