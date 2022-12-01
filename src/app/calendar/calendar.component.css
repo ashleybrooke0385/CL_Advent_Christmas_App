@@ -49,14 +49,14 @@
   opacity: 0.79;
   border-radius: 50% 20% / 10% 40%;}
 
-/* I'm leaving all these grid items below for now in case
-we want to add style these items individually. For example: individual sizes, or individual colors */
+/* I'm leaving all these grid items below for now. They have been given individual ids in case
+we want to add style to these items individually. For example: individual sizes, or individual colors. */
 #grid-item-1 {
-  /* border-radius: 0% 30% ; */
+
 }
 
 #grid-item-2 {
- /* border-radius: 100px; */
+
 }
 
 #grid-item-3 {

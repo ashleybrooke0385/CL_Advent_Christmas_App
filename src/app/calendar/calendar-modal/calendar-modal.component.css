@@ -1,0 +1,28 @@
+.bg-modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.7);
+  position: absolute;
+  top: 0;
+}
+
+.modal-content {
+  width: 600px;
+  height: 350px;
+  background-color: white;
+  border-radius: 40% 10% / 20% 50%;
+  text-align: center;
+  padding: 15px;
+  position: relative;
+}
+
+.close {
+  position: absolute;
+  top: 0;
+  right: 50px;
+  font-size: 30px;
+  transform: rotate(45deg);
+}
