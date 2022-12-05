@@ -11,12 +11,20 @@
 
 .grid-container  {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  column-gap: 10px;
+  row-gap: 15px;
+  justify-content: space-between;
+  /* justify-items: center;
+  place-items: center; */
+
+
   /* //I changed this from the word auto five times cause I needed to tell it exactly what to do, not let it decide automatically */
-  padding-left: 100px;
+  /* padding-left: 100px;
   padding-right: 100px;
   padding-top: 5%;
-  gap: 1.5rem;
+  gap: 1.5rem; */
 }
 
 .grid-item {
