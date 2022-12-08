@@ -22,4 +22,11 @@ export class AuthComponent implements OnInit {
     });
     form.reset();
   }
+
+
+
+onAuthFormSubmit(formObj: NgForm) {
+  console.log('Form Values:', formObj.value);
+  formObj.reset();
+}
 }
