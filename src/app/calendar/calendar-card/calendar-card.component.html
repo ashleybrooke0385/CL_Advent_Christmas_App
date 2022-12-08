@@ -1,1 +1,13 @@
-<p>calendar-card works!</p>
+
+<div class="container">
+  <div class="grid">
+    <div class="gridItemInner" *ngFor="let day of days">
+      <div class="gridItemFront">
+        <p>{{day}}</p>
+      </div>
+      <div class="gridItemBack">
+        <p>Rejoice!  There are only {{25-day}} days left until Christmas!</p>
+      </div>
+    </div>
+  </div>
+</div>
