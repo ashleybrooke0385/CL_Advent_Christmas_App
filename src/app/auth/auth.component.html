@@ -1,5 +1,7 @@
 <div class="login-container">
+  <div class="snowflakes"></div>
   <div class="login-prompt">
+    <h1 class="login-header">Sign up for the calendar!</h1>
     <form #loginFormRef="ngForm" (ngSubmit)="onSubmit(loginFormRef)">
       <div class="form-group">
         <label for="email">Email</label>
@@ -9,7 +11,7 @@
         <label for="password">Password</label>
         <input type="password" id="password" name="password" ngModel />
       </div>
-      <button id="form-btn" type="submit">Login</button>
+      <div class="form-btn-container"><button type="submit">Login</button></div>
     </form>
   </div>
 </div>

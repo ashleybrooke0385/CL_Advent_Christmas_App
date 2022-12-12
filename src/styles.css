@@ -1,5 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
 
+/* styles placed in root */
+:root {
+  --md-screen: 768px;
+}
+
+body {
+  display: block;
+  height: 100vh;
+  margin: 0;
+}
+
 /* global typography */
 * {
   font-family: "Roboto", sans-serif;
@@ -14,8 +25,31 @@ li {
   list-style: none;
 }
 
-:root {
-  --md-screen: 768px;
+button {
+  color: #fff;
+  border: none;
+  background-color: #c00c00;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 10px;
+}
+
+button:active {
+  transform: scale(0.94);
+  transition: transform 100ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+/* form styles */
+label {
+  display: block;
+}
+
+input {
+  display: block;
+  width: 18.75rem;
+  height: 2rem;
+  font-size: 0.9rem;
 }
 
 .container {
