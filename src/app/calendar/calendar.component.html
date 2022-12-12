@@ -2,8 +2,8 @@
 <div class="advent-calendar">
   <div class="grid-container">
     <app-calendar-card
-      *ngFor="let card of mockData; let i = index"
-      [data]="mockData[i]"
+      *ngFor="let card of cardData; let i = index"
+      [data]="cardData[i]"
       (cycleData)="onModalOpen($event)"
     >
     </app-calendar-card>
