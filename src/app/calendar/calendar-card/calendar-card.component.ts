@@ -9,6 +9,8 @@ export class CalendarCardComponent {
   @Input() data!: any;
   @Output() cycleData = new EventEmitter();
 
+  today = 12;
+
   onClick() {
     this.cycleData.emit(this.data);
     console.log(this.data);
