@@ -1,14 +1,20 @@
-<div class="container"
->
+<div class="container">
   <div class="grid">
     <div class="gridItemInner">
-      <div class="gridItemFront"
-           >
+      <div class="gridItemFront" [ngClass]="{
+        gridItemFrontEven: data.cardNumber % 2 === 0,
+        gridItemFrontOdd: data.cardNumber % 2 !== 0
+      }">
         <p>{{data.cardNumber}}</p>
       </div>
-      <div class="gridItemBack">
+        <div class="gridItemBack" [ngClass]="{
+          gridItemBackEven: data.cardNumber % 2 === 0,
+          gridItemBackOdd: data.cardNumber % 2 !== 0
+        }">
         <p>Rejoice!  There are only {{25-data.cardNumber}} days left until Christmas!</p>
-        <button (click)="onClick()"> click
+        <button
+          (click)="onClick()">
+           click
         </button>
       </div>
     </div>
