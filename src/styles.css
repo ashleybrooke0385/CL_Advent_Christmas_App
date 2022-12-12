@@ -11,6 +11,11 @@ body {
   margin: 0;
 }
 
+/* block overflow */
+.on-modal {
+  overflow: hidden;
+}
+
 /* global typography */
 * {
   font-family: "Berkshire Swash", sans-serif;
