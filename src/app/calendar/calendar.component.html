@@ -1,5 +1,4 @@
 <!-- Calendar card data being passed through this mockData property from the calendar.component.ts. -->
-
 <div class="advent-calendar">
   <div class="grid-container">
     <app-calendar-card
@@ -9,9 +8,9 @@
     >
     </app-calendar-card>
   </div>
-  <app-calendar-modal
-    *ngIf="isOpened"
-    [data]="selectedData"
-    (closeEvent)="isOpened = !isOpened"
-  ></app-calendar-modal>
 </div>
+<app-calendar-modal
+  *ngIf="isOpened"
+  [data]="selectedData"
+  (closeEvent)="isOpened = !isOpened"
+></app-calendar-modal>
