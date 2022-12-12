@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { BehaviorSubject, tap } from 'rxjs';
-import { environment } from 'src/environments/environment';
+import { environment } from 'src/environments/environment.prod';
 import { User } from '../models/user.model';
 
 interface AuthResponse {
@@ -26,7 +26,7 @@ export class AuthService {
 
   login(email: string, password: string) {
     return this.http
-      .post<AuthResponse>(this.loginUri + environment.development.accessToken, {
+      .post<AuthResponse>(this.loginUri + environment.accessToken, {
         email: email,
         password: password,
         returnSecureToken: true,
