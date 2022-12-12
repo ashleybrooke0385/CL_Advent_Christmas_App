@@ -1,14 +1,35 @@
 .advent-calendar {
   background-image: url("../../assets/svg/christmas-6809681.svg");
   background-size: cover;
+  display: flex;
+  justify-content: center;
 }
 
 /* grid positioned lower using padding so that the navbar fits */
 .grid-container {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 12.5rem 12.5rem 12.5rem 12.5rem 12.5rem;
   grid-template-rows: auto;
-  column-gap: 10px;
-  row-gap: 15px;
+  column-gap: 30px;
+  row-gap: 30px;
   padding-top: 120px;
+
 }
+
+@media (max-width: 1120px) {
+  .grid-container {
+  grid-template-columns: 12.5rem 12.5rem 12.5rem 12.5rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .grid-container {
+  grid-template-columns: 12.5rem 12.5rem 12.5rem;
+  }
+}
+@media (max-width: 672px) {
+  .grid-container {
+  grid-template-columns: 12.5rem 12.5rem;
+  }
+}
+
