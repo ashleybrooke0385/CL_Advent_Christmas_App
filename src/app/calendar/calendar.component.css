@@ -3,10 +3,12 @@
   background-size: cover;
 }
 
+/* grid positioned lower using padding so that the navbar fits */
 .grid-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: auto;
   column-gap: 10px;
   row-gap: 15px;
+  padding-top: 120px;
 }
