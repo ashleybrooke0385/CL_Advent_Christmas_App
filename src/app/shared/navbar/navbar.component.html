@@ -1,42 +1,44 @@
 <nav>
-  <div class="container nav-container">
-    <a href="#" class="nav-main-link">
-      <span class="nav-title">Advent Christmas App</span>
-    </a>
-    <button
-      data-collapse-toggle="navbar-dropdown"
-      type="button"
-      class="navbar-dropdown"
-      aria-controls="navbar-dropdown"
-      aria-expanded="false"
-    >
-      <span class="sr-only">Open main menu</span>
-      <svg
-        class="w-6 h-6"
-        aria-hidden="true"
-        fill="currentColor"
-        viewBox="0 0 20 20"
-        xmlns="http://www.w3.org/2000/svg"
+  <div class="wrapper">
+    <div class="container nav-container">
+      <a href="#" class="nav-main-link">
+        <span class="nav-title text-gradient">Advent Christmas App</span>
+      </a>
+      <button
+        type="button"
+        class="navbar-dropdown"
+        (click)="show = !show"
+        aria-controls="navbar-dropdown"
+        aria-expanded="false"
       >
-        <path
-          fill-rule="evenodd"
-          d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-          clip-rule="evenodd"
-        ></path>
-      </svg>
-    </button>
-    <div id="navbar-dropdown">
-      <ul class="dropdown-list">
-        <li>
-          <a routerLink="/advent" class="nav-link">Advent</a>
-        </li>
-        <li>
-          <a href="#" class="nav-link">Secret Santa</a>
-        </li>
-        <li>
-          <a routerLink="/auth" class="nav-link">Login</a>
-        </li>
-      </ul>
+        <span class="sr-only" aria-hidden="true">Open main menu</span>
+        <svg
+          class="w-6 h-6"
+          aria-hidden="true"
+          fill="currentColor"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
+      <div id="navbar-dropdown">
+        <ul [class.show]="show" class="dropdown-list">
+          <li>
+            <a routerLink="/advent" class="nav-link text-gradient">Advent</a>
+          </li>
+          <li>
+            <a href="#" class="nav-link text-gradient">Secret Santa</a>
+          </li>
+          <li>
+            <a routerLink="/auth" class="nav-link text-gradient">Login</a>
+          </li>
+        </ul>
+      </div>
     </div>
   </div>
 </nav>
