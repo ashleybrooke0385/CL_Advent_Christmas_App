@@ -1,11 +1,24 @@
 nav {
+  width: 100%;
+  margin: 15px 0 auto;
+  position: fixed;
+  z-index: 100;
+}
+
+.wrapper {
+  background-color: #3f424f;
+  width: 70%;
+  border-radius: 10px;
+  margin: auto;
   padding: 0.5rem 0;
-  background-color: #fff;
-  border-color: rgb(229 231 235);
 }
 
 .nav-container {
-  margin: auto;
+  margin: 0 auto;
+  padding: 0 1rem;
+  width: 90%;
+  border: 2px dashed rgb(255, 215, 0, 0.4);
+  border-radius: 5px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -19,7 +32,7 @@ nav {
 
 .nav-title {
   align-self: center;
-  font-size: 1.25rem;
+  font-size: 1.75rem;
   line-height: 1.75rem;
   font-weight: 600;
   white-space: nowrap;
@@ -34,6 +47,8 @@ nav {
   line-height: 1.25rem;
   color: rgb(107 114 128);
   border-radius: 0.5rem;
+  background-color: #fff;
+  margin: 10px;
 }
 
 .navbar-dropdown:hover {
@@ -45,7 +60,7 @@ nav {
   outline-offset: 2px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 870px) {
   .navbar-dropdown {
     display: none;
   }
@@ -56,7 +71,7 @@ nav {
   width: 100%;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 870px) {
   #navbar-dropdown {
     display: block;
     width: auto;
@@ -64,24 +79,30 @@ nav {
 }
 
 .dropdown-list {
-  display: flex;
+  display: none;
   flex-direction: column;
   gap: 0.5rem;
   padding: 1rem;
   margin-top: 1rem;
-  border: 1px solid rgb(243 244 246);
-  background-color: rgb(249 250 251);
+  background-color: #3f424f;
+  color: #fff;
 }
 
-@media (min-width: 768px) {
+.show {
+  display: flex;
+}
+
+@media (min-width: 870px) {
   .dropdown-list {
+    display: flex;
     flex-direction: row;
-    margin-top: 0;
+    margin: 0;
     font-size: 0.875rem;
     line-height: 1.25rem;
     font-weight: 500;
     border-width: 0;
-    background-color: #fff;
+    background-color: #3f424f;
+    color: #fff;
   }
 }
 
@@ -91,8 +112,9 @@ nav {
   padding-bottom: 0.5rem;
   padding-left: 0.75rem;
   padding-right: 1rem;
-  color: rgb(55 65 81);
+  color: #fff;
   border-radius: 0.25rem;
+  font-size: 1.3rem;
 }
 
 .nav-link:hover {
